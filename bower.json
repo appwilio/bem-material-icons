@@ -9,7 +9,7 @@
     "libs"
   ],
   "dependencies": {
-    "bem-components": "3.0.0",
-    "material-design-icons": "2.2.3"
+    "material-design-icons": "2.2.3",
+    "bem-core" : "3.x"
   }
 }

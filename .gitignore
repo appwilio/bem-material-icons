@@ -8,11 +8,9 @@ node_modules/
 npm-debug.log
 
 # bem
-.bem/cache/
 .enb/tmp/
 *bundles*/*/*.*
 !*bundles*/*/*.bemjson.js
 !*bundles*/.bem/*
-*pages*/*/*.*
-!*pages*/*/*.bemjson.js
-!*pages*/.bem/*
+
+common.blocks/icon/*
