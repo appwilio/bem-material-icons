@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const ICONS_ROOT = path.resolve('libs/material-design-icons');
+const ICONS_ROOT = path.resolve('node_modules/material-design-icons');
 const ICONS_PATH = 'svg/production';
 const BASE_SIZE = 24;
 
