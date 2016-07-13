@@ -14,3 +14,4 @@ npm-debug.log
 !*bundles*/.bem/*
 
 common.blocks/icon/*
+!common.blocks/icon/.gitkeep
