@@ -8,9 +8,6 @@
     "node_modules",
     "libs"
   ],
-  "dependencies": {
-    "material-design-icons": "2.2.3"
-  },
   "devDependencies":{
     "bem-core" : "3.x"
   }
