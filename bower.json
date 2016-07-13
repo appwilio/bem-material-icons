@@ -1,6 +1,6 @@
 {
-  "name": "bem-project-stub",
-  "version": "1.7.0",
+  "name": "bem-material-icons",
+  "version": "2.2.3",
   "description": "BEM project stub",
   "bugs": "https://github.com/bem/project-stub/issues",
   "ignore": [
@@ -9,7 +9,9 @@
     "libs"
   ],
   "dependencies": {
-    "material-design-icons": "2.2.3",
+    "material-design-icons": "2.2.3"
+  },
+  "devDependencies":{
     "bem-core" : "3.x"
   }
 }
