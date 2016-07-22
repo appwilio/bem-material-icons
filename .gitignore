@@ -12,6 +12,3 @@ npm-debug.log
 *bundles*/*/*.*
 !*bundles*/*/*.bemjson.js
 !*bundles*/.bem/*
-
-common.blocks/icon/*
-!common.blocks/icon/.gitkeep
