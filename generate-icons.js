@@ -10,7 +10,24 @@ var mods = [];
 var icons = [];
 var sources = [];
 
-var scopes = ['action', 'alert', 'av', 'communication', 'content', 'device', 'editor', 'file', 'hardware'];
+var scopes = [
+    'action',
+    'alert',
+    'av',
+    'communication',
+    'content',
+    'device',
+    'editor',
+    'file',
+    'hardware',
+    'image',
+    'maps',
+    'navigation',
+    'notification',
+    'places',
+    'social',
+    'toggle'
+];
 sources.push(scopes.map(processScope));
 
 function processScope(scopeName){
