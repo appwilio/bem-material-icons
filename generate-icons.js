@@ -60,11 +60,20 @@ function filterIcon(filename){
 }
 
 function bemify(filename){
-    var fileData = filename.split('_');
+    var fileData = filename.split('_'),
+        modName,
+        modVal;
+
+    fileData.splice(0,1); //delete unused ic_ prefix
+    fileData.pop(); //delete unused file extension
+
+    modName = fileData.splice(0, 1)[0];
+    modVal = fileData.join('-') || true;
+
     var entity = {
         file : filename,
-        modName : fileData[1],
-        modVal : fileData.length === 4? fileData[2] : true
+        modName : modName,
+        modVal : modVal
     };
     return entity;
 }
