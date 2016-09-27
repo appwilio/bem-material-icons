@@ -25,5 +25,21 @@ module.exports = {
                 video : 'call'
             }
         },
+        ['down', 'left', 'right', 'up'].map(val => {
+            return {
+                block : 'icon',
+                mods : {
+                    material : true,
+                    keyboard : `arrow-${val}`
+                }
+            };
+        }),
+        {
+            block : 'icon',
+            mods : {
+                material : true,
+                keyboard : true
+            }
+        },
     ]
 };
