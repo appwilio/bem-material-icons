@@ -1,4 +1,3 @@
-libs/
 node_modules/
 .DS_Store
 .idea/
@@ -11,4 +10,3 @@ npm-debug.log
 .enb/tmp/
 *bundles*/*/*.*
 !*bundles*/*/*.bemjson.js
-!*bundles*/.bem/*

@@ -79,10 +79,10 @@ function bemify(filename){
 }
 
 function getTemplateContent(mod, val, svg){
-    var modVal = val === true || '\''+val+'\'';
+    var modVal = val === true || `'${val}'`;
     return [
-        'block(\'icon\').mod(\'material\', true).mod(\''+mod+'\', '+modVal+')(',
-        '    content()(\''+svg+'\')',
+        `block('icon').mod('material', true).mod('${mod}', ${modVal})(`,
+        `    content()('${svg}')`,
         ');'
     ].join('\n');
 }

@@ -1,19 +1,7 @@
-var techs = {
+const techs = {
         // essential
         fileProvider: require('enb/techs/file-provider'),
         fileMerge: require('enb/techs/file-merge'),
-
-        // optimization
-        borschik: require('enb-borschik/techs/borschik'),
-
-        // css
-        stylus: require('enb-stylus/techs/stylus'),
-
-        // js
-        browserJs: require('enb-js/techs/browser-js'),
-
-        // bemtree
-        // bemtree: require('enb-bemxjst/techs/bemtree'),
 
         // bemhtml
         bemhtml: require('enb-bemxjst/techs/bemhtml'),
@@ -21,13 +9,13 @@ var techs = {
     },
     enbBemTechs = require('enb-bem-techs'),
     levels = [
-        { path: 'libs/bem-core/common.blocks', check: false },
-        { path: 'libs/bem-core/desktop.blocks', check: false },
+        { path: 'node_modules/bem-core/common.blocks', check: false },
+        { path: 'node_modules/bem-core/desktop.blocks', check: false },
         'common.blocks',
     ];
 
 module.exports = function(config) {
-    var isProd = process.env.YENV === 'production';
+    const isProd = process.env.YENV === 'production';
 
     config.nodes('*.bundles/*', function(nodeConfig) {
         nodeConfig.addTechs([
@@ -38,12 +26,6 @@ module.exports = function(config) {
             [enbBemTechs.deps],
             [enbBemTechs.files],
 
-            // css
-            [techs.stylus, {
-                target: '?.css',
-                sourcemap: true
-            }],
-
             // bemhtml
             [techs.bemhtml, {
                 sourceSuffixes: ['bemhtml', 'bemhtml.js'],
@@ -51,16 +33,9 @@ module.exports = function(config) {
             }],
 
             // html
-            [techs.bemjsonToHtml],
-
-            // js
-            [ techs.browserJs, {
-                includeYM: true,
-                target : '?.js',
-                sourcemap : true
-            }]
+            [techs.bemjsonToHtml]
         ]);
 
-        nodeConfig.addTargets(['?.html', '?.css', '?.js']);
+        nodeConfig.addTargets(['?.html']);
     });
 };
