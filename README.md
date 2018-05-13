@@ -1,5 +1,5 @@
-google material icons for BEM
-===============================
+Google material icons for BEMHTML
+=================================
 
 Just make material icon svg bemhtml templates!
 
@@ -13,3 +13,5 @@ example
 Allow to use google material icons in bem project.
 
 Original icons https://design.google.com/icons/
+
+[icons preview](https://appwilio.github.io/bem-material-icons/)
