@@ -1,6 +1,6 @@
 {
   "author": "Evgeniy Baranov <master@kompolom.ru>",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "name": "bem-material-icons",
   "description": "BEM implementation of material icons by Goolge",
   "repository": {
