@@ -82,7 +82,7 @@ function getTemplateContent(mod, val, svg){
     var modVal = val === true || `'${val}'`;
     return [
         `block('icon').mod('material', true).mod('${mod}', ${modVal})(`,
-        `    content()('${svg}')`,
+        `    content()({ html : '${svg}' })`,
         ');'
     ].join('\n');
 }
